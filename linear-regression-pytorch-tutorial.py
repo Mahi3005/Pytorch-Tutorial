@@ -26,7 +26,7 @@ x_mean,x_std=X.mean(),X.std()
 
 X_normalized=(X-x_mean)/x_std
 
-X_tensor = torch.tensor(X_normalized,dtype=torch.float32)
+X_tensor = torch.tensor(X_normalized,dtype=torch.float32) #this is final X tensor after the normalization process
 
 print(X_tensor.shape)
 
@@ -34,7 +34,7 @@ y_mean, y_std = y.mean(), y.std()
 
 y_normalized = (y - y_mean) / y_std
 
-y_tensor = torch.tensor(y_normalized, dtype=torch.float32)
+y_tensor = torch.tensor(y_normalized, dtype=torch.float32) #this is final y tensor after the normalization process
 
 print(y_tensor.shape)
 
@@ -57,6 +57,8 @@ out_features=1
 
 
 model=LinearRegressionModel(in_features,out_features)
+
+#loss and optimizer
 
 criterion=nn.MSELoss()
 
