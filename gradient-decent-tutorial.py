@@ -12,7 +12,7 @@ y = x**2 + 4
 # At x = 3, dy/dx should be 2*3 = 6
 
 # Compute the gradient of y w.r.t x using backward()
-y.backward()  
+y.backward()  ##this is how we compute a gradients  this will help further in optimization phase in model traning 
 
 # PyTorch stores the computed gradient in x.grad
 print("Gradient X:", x.grad)
